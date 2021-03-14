@@ -22,6 +22,11 @@ import { CommonModule } from '@angular/common';
           .then(module => module.AdminAuthModule)
       },
       {
+        path: 'admin',
+        loadChildren: () => import('./routing/admin/admin.module')
+          .then(module => module.AdminModule)
+      },
+      {
         path: '**',
         loadChildren: () => import('./routing/not-found/not-found.module')
           .then(module => module.NotFoundModule)
