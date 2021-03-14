@@ -13,6 +13,7 @@ import { RouterModule } from '@angular/router';
         path: '',
         pathMatch: 'full',
         redirectTo: 'dashboard'
+
       },
       {
         path: 'dashboard',
