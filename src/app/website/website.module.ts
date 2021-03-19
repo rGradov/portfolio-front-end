@@ -3,7 +3,6 @@ import { AdminGuestGuard } from './guards/admin-guest.guard';
 import { RouterModule, CanLoad } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SharedModule } from './routing/shared/shared/shared.module';
 
 
 

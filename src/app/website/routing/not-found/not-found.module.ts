@@ -2,7 +2,6 @@ import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
-import { SharedModule } from '../shared/shared/shared.module';
 
 
 

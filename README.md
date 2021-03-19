@@ -31,4 +31,7 @@
         |-- [+] bold
         |-- [+] medium
         |-- [+] regular
+|-- styles
+    |-- global
+        |-- _fonts.scss
 ```
