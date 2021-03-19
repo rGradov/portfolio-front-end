@@ -20,9 +20,7 @@
         |-- not-found
             |-- pages
             |-- not-found-module.ts
-        |-- shared
-            |-- components
-            |-- shared.module.ts
+
         |-- works
             |-- works
             |-- works-module.ts
@@ -34,4 +32,7 @@
 |-- styles
     |-- global
         |-- _fonts.scss
+|-- shared
+    |-- components
+    |-- shared.module.ts
 ```
