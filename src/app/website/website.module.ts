@@ -3,6 +3,7 @@ import { AdminGuestGuard } from './guards/admin-guest.guard';
 import { RouterModule, CanLoad } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SharedModule } from './routing/shared/shared/shared.module';
 
 
 
@@ -34,10 +35,20 @@ import { CommonModule } from '@angular/common';
 
       },
       {
+        path: 'works',
+        loadChildren: () => import('./routing/works/works.module')
+          .then(module => module.WorksModule)
+      },
+      {
+        path: 'contact',
+        loadChildren: () => import('./routing/contact/contact.module')
+          .then(module => module.ContactModule)
+      },
+      {
         path: '**',
         loadChildren: () => import('./routing/not-found/not-found.module')
           .then(module => module.NotFoundModule)
-      }
+      },
     ])
 
   ],
