@@ -1,0 +1,19 @@
+//Basic flex mixin's
+
+@mixin flexSpaceBetween($flex-direction) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flexbacis($flex-direction, $justify-content) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+}
+// Basic margin mixin's
+
+@mixin ml-mr-auto {
+  margin-left: auto;
+  margin-right: auto;
+}

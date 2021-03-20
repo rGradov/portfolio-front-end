@@ -1,9 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
-
 @import "styles/global/_fonts.scss";
-// primary font
-$primary_font: "Heebo";
+@import "styles/global/_variable.scss";
+@import "styles/global/_mixins.scss";
 
 * {
   font-family: $primary_font;
+}
+
+//header block
+.header {
+  .nav {
+    width: 232px;
+    margin-left: auto; //correct this
+    ul {
+      @include flexbacis(row, end);
+      li {
+        flex: 0.2 1 auto;
+      }
+    }
+  }
+}
+// footer block
+.footer {
+  .icon {
+    @include ml-mr-auto;
+    width: 232px;
+    height: 7px; //correct this
+    @include flexSpaceBetween(row);
+    flex-wrap: nowrap;
+    .icon-li {
+      flex: 0.2 1 auto; //correct this
+      a {
+        img {
+        }
+      }
+    }
+  }
+  .block {
+    @include flexSpaceBetween(row);
+    font-size: 12px;
+    .text {
+    }
+  }
 }
